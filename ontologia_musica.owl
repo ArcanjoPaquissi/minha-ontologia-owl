@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns="http://example.org/ontologia-musica#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#foiLancadaEm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:label xml:lang="pt">foiLançadaEm</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#ImagineMusica">
+    <rdf:type rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <temTitulo xml:lang="en">Imagine</temTitulo>
+    <temDuracao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">183</temDuracao>
+    <foiLancadaEm rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-10-11</foiLancadaEm>
+    <temArtista rdf:resource="http://example.org/ontologia-musica#JohnLennon"/>
+    <temGenero rdf:resource="http://example.org/ontologia-musica#GeneroPop"/>
+    <fazParteDoAlbum rdf:resource="http://example.org/ontologia-musica#AlbumImagine"/>
+    <rdfs:label xml:lang="pt">Imagine (música)</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Imagine_(John_Lennon_song)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Banda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Banda</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Artista"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#MusicaClassica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Música Clássica</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Classical_music"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#fazParteDoAlbum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia-musica#Album"/>
+    <rdfs:label xml:lang="pt">fazParteDoÁlbum</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temDuracao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label xml:lang="pt">temDuração</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#lançouMusica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Artista"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <rdfs:label xml:lang="pt">lançouMúsica</rdfs:label>
+    <owl:inverseOf rdf:resource="http://example.org/ontologia-musica#temArtista"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#AlbumImagine">
+    <rdf:type rdf:resource="http://example.org/ontologia-musica#Album"/>
+    <temNomeDoAlbum xml:lang="en">Imagine</temNomeDoAlbum>
+    <temAnoDeLancamento rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1971</temAnoDeLancamento>
+    <rdfs:label xml:lang="pt">Imagine (álbum)</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Imagine_(John_Lennon_album)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#tocouInstrumento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Artista"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia-musica#InstrumentoMusical"/>
+    <rdfs:label xml:lang="pt">tocouInstrumento</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Musica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Música</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Guitarra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Guitarra</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#InstrumentoMusical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#MusicaRock">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Música Rock</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Rock_music"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#foiFundadaEm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Banda"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:label xml:lang="pt">foiFundadaEm</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temTitulo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="pt">temTítulo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temNomeDoAlbum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Album"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="pt">temNomeDoAlbum</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#MusicaPop">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Música Pop</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Pop_music"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Violao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Violão</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#InstrumentoMusical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#JohnLennon">
+    <rdf:type rdf:resource="http://example.org/ontologia-musica#Cantor"/>
+    <rdf:type rdf:resource="http://example.org/ontologia-musica#Compositor"/>
+    <temNomeArtistico xml:lang="en">John Lennon</temNomeArtistico>
+    <temNacionalidade xml:lang="pt">Reino Unido</temNacionalidade>
+    <rdfs:label xml:lang="pt">John Lennon</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/John_Lennon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Album">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Álbum</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Bateria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Bateria</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#InstrumentoMusical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#GeneroMusical">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Gênero Musical</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Music_genre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#MusicaSertaneja">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Música Sertaneja</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Sertanejo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temNacionalidade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Artista"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="pt">temNacionalidade</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temAnoDeLancamento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Album"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:label xml:lang="pt">temAnoDeLancamento</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Piano">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Piano</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#InstrumentoMusical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#ehCompostaPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Banda"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia-musica#Artista"/>
+    <rdfs:label xml:lang="pt">éCompostaPor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Instrumentista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Instrumentista</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Artista"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#ontologiaMusica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="pt">Ontologia de Música (OntoMusic)</rdfs:label>
+    <rdfs:comment xml:lang="pt">Versão RDF/XML compatível com WebProtégé.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Artista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Artista</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#InstrumentoMusical">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Instrumento Musical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temGenero">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia-musica#GeneroMusical"/>
+    <rdfs:label xml:lang="pt">temGênero</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Cantor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Cantor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Artista"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temArtista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Musica"/>
+    <rdfs:range rdf:resource="http://example.org/ontologia-musica#Artista"/>
+    <rdfs:label xml:lang="pt">temArtista</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#Compositor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Compositor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontologia-musica#Artista"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#GeneroPop">
+    <rdf:type rdf:resource="http://example.org/ontologia-musica#GeneroMusical"/>
+    <rdfs:label xml:lang="pt">Pop</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Pop_music"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#temNomeArtistico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontologia-musica#Artista"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="pt">temNomeArtístico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontologia-musica#ViolaoAcustico">
+    <rdf:type rdf:resource="http://example.org/ontologia-musica#Violao"/>
+    <rdfs:label xml:lang="pt">Violão Acústico</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
