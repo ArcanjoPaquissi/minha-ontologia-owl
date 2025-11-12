@@ -1,7 +1,7 @@
 # minha-ontologia-owl
 A ontologia de música tem como objetivo estruturar formalmente os conceitos do domínio musical, permitindo a representação de músicas, artistas, álbuns, instrumentos e gêneros musicais, bem como seus atributos e relacionamentos.
 
-# 🎵 Ontologia de Música (OntoMusic)
+#  Ontologia de Música (OntoMusic)
 
 Ontologia desenvolvida para representar o domínio musical, descrevendo entidades como músicas, artistas, álbuns, instrumentos e gêneros musicais.  
 O projeto segue princípios de **Linked Data**, integrando dados reais da **DBpedia**.
@@ -12,13 +12,13 @@ O projeto segue princípios de **Linked Data**, integrando dados reais da **DBpe
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Modelar o domínio da música de forma semântica, permitindo interoperabilidade entre dados musicais, sistemas e repositórios de conhecimento.
 
 ---
 
-## 📚 Escopo
+##  Escopo
 
 A ontologia abrange os seguintes conceitos:
 
@@ -30,7 +30,7 @@ A ontologia abrange os seguintes conceitos:
 
 ---
 
-## 🧩 Estrutura de Classes
+##  Estrutura de Classes
 
 - **Música**
   - Subclasses: MúsicaPop, MúsicaRock, MúsicaClássica, MúsicaSertaneja
@@ -43,7 +43,7 @@ A ontologia abrange os seguintes conceitos:
 
 ---
 
-## 🔢 Propriedades Principais
+##  Propriedades Principais
 
 | Tipo | Propriedade | Domínio | Alcance | Descrição |
 |------|--------------|----------|----------|------------|
@@ -60,7 +60,7 @@ A ontologia abrange os seguintes conceitos:
 
 ---
 
-## 🌐 Integração com DBpedia
+##  Integração com DBpedia
 
 A ontologia conecta-se a recursos reais da **DBpedia** por meio das propriedades `owl:equivalentClass` e `owl:sameAs`.
 
@@ -78,7 +78,7 @@ A ontologia conecta-se a recursos reais da **DBpedia** por meio das propriedades
 
 ---
 
-## 🧠 Exemplo de Instâncias
+##  Exemplo de Instâncias
 
 | Entidade | Tipo | Propriedades |
 |-----------|------|---------------|
@@ -88,7 +88,7 @@ A ontologia conecta-se a recursos reais da **DBpedia** por meio das propriedades
 
 ---
 
-## 🖼️ Exemplos Visuais (para adicionar no GitHub)
+##  Exemplos Visuais (para adicionar no GitHub)
 
 Coloque na pasta `/docs/` prints do Protégé mostrando:
 - Hierarquia de classes (*Classes tab*)
@@ -97,7 +97,7 @@ Coloque na pasta `/docs/` prints do Protégé mostrando:
 
 ---
 
-## 🔎 Consultas SPARQL (Exemplo)
+##  Consultas SPARQL (Exemplo)
 
 ```sparql
 # Listar todas as músicas e seus artistas
