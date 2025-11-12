@@ -90,7 +90,7 @@ A ontologia conecta-se a recursos reais da **DBpedia** por meio das propriedades
 
 
 
----
+
 
 ##  Consultas SPARQL (Exemplo)
 
