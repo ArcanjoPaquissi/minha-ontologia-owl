@@ -88,12 +88,7 @@ A ontologia conecta-se a recursos reais da **DBpedia** por meio das propriedades
 
 ---
 
-##  Exemplos Visuais (para adicionar no GitHub)
 
-Coloque na pasta `/docs/` prints do Protégé mostrando:
-- Hierarquia de classes (*Classes tab*)
-- Object properties (*Object Properties tab*)
-- Individuals com links DBpedia (*Individuals tab*)
 
 ---
 
